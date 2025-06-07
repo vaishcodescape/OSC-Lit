@@ -1,2 +1,2 @@
 # OSC-Lit
-OSC-Lit is a Online web application which hosts git repos for open source contributions its a great platform for users who are new to open source and would like to begin their journey in contributing to it.
+OSC-Lit is a online web application where users can find git repos and make open source contributions easily
