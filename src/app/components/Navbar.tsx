@@ -1,5 +1,4 @@
 "use client"
-import {motion} from 'framer-motion'
 export default function Navbar() {
   return (
     <nav className="bg-black/80 py-4">
