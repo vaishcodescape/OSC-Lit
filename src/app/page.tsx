@@ -42,7 +42,7 @@ export default function Home() {
           <div className="absolute -inset-1 rounded-2xl pointer-events-none z-0 bg-gradient-to-r from-[#00f0ff] via-[#2563eb] to-[#00ff85] blur-2xl opacity-50"></div>
           <h1 className="home-title text-5xl font-extrabold mb-6 relative z-10 bg-gradient-to-r from-[#00f0ff] via-[#2563eb] to-[#00ff85] bg-clip-text text-transparent drop-shadow-lg drop-shadow-[0_0_16px_#00f0ff]" ref={titleRef}>OSC-Lit</h1>
           <p className="text-lg text-gray-300 mb-8 text-center relative z-10" ref={descriptionRef}>
-            Open Source Contribution Made Easy and Lit.
+            Open Source Contribution is Easy and Lit.
           </p>
           <div className="home-buttons flex flex-col sm:flex-row gap-4 justify-center relative z-10" ref={buttonRef}>
             <Button href="#" variant="primary">Get Started</Button>
