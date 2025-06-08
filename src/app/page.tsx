@@ -6,7 +6,6 @@ import gsap from 'gsap';
 import Button from './components/Button';
 import Navbar from './components/Navbar';
 import KeyFeaturesSection from './components/KeyFeaturesSection';
-import { Nabla } from 'next/font/google';
 
 export default function Home() {
   const titleRef = useRef(null);
