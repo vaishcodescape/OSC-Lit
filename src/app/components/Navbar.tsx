@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur border-b border-[#2563eb]/40 z-50 shadow-xl rounded-b-2xl py-2">
+    <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur border-b border-[#2563eb]/40 z-[100] shadow-xl">
       <div className="max-w-3xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.2 }}>
             <Link href="/" className="font-extrabold text-2xl sm:text-3xl bg-gradient-to-r from-[#00f0ff] via-[#2563eb] to-[#00ff85] bg-clip-text text-transparent drop-shadow-[0_0_12px_#00f0ff] tracking-tight">
               OSC-Lit
