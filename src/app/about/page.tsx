@@ -23,7 +23,7 @@ export default function About() {
         >
           <h1 className="text-4xl font-extrabold mb-8 text-center bg-gradient-to-r from-[#00f0ff] via-[#2563eb] to-[#00ff85] bg-clip-text text-transparent drop-shadow-lg drop-shadow-[0_0_16px_#00f0ff]">About OSC-Lit</h1>
           <p className="text-lg text-gray-300 mb-8 text-center">
-            New to open source? Don't worry, we've got your back! OSC-Lit is your all-in-one platform for managing and optimizing your open source contributions.
+            New to open source? Don&apos;t worry, we&apos;ve got your back! OSC-Lit is your all-in-one platform for managing and optimizing your open source contributions.
           </p>
           <div className="space-y-8">
             <div className="bg-black border border-[#2563eb]/40 rounded-lg p-6 shadow-lg">
