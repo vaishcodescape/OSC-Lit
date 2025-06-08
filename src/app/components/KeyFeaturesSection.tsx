@@ -14,8 +14,8 @@ const features = [
     icon: <FiBookOpen className="text-5xl text-blue-500 drop-shadow-glow" />,
   },
   {
-    title: 'Collaboration Tools',
-    description: 'Connect and collaborate with other contributors in real time.',
+    title: 'Collaboration Made Easy',
+    description: 'Find Repositories which belong to companies registered for GSOC and other Open Source Programs.',
     icon: <FiUsers className="text-5xl text-blue-500 drop-shadow-glow" />,
   },
 ];
