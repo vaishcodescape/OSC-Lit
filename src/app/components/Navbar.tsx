@@ -29,15 +29,7 @@ export default function Navbar() {
                 </Link>
               </motion.div>
             ))}
-            <motion.div whileHover={{ scale: 1.12 }} transition={{ duration: 0.18 }}>
-              <Link
-                href="/sign-in"
-                className="px-6 py-2 bg-black/90 border-2 border-transparent rounded-lg text-white font-semibold text-lg shadow-md hover:border-transparent hover:bg-gradient-to-r hover:from-[#00f0ff] hover:to-[#2563eb] hover:text-black hover:shadow-[0_0_24px_4px_rgba(0,240,255,0.25)] transition-all duration-200"
-                style={{ boxShadow: '0 0 0 2px #2563eb, 0 2px 16px 0 #00f0ff33' }}
-              >
-                Login
-              </Link>
-            </motion.div>
+            
           </div>
         </div>
       </div>
