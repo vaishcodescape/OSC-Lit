@@ -1,26 +1,16 @@
 "use client"
+import React from 'react';
 import { useState } from 'react';
-import { FiSearch, FiFilter, FiStar, FiGitBranch, FiEye, FiX } from 'react-icons/fi';
+import { FiSearch, FiFilter } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 
-interface Repository {
-  id: number;
-  name: string;
-  description: string;
-  stars: number;
-  forks: number;
-  language: string;
-  topics: string[];
-  lastUpdated: string;
-}
+export default function Explore(): React.ReactElement {
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const [selectedLanguage, setSelectedLanguage] = useState<string>('all');
+  const [selectedTopic, setSelectedTopic] = useState<string>('all');
+  const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
 
-export default function Explore() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedLanguage, setSelectedLanguage] = useState('all');
-  const [selectedTopic, setSelectedTopic] = useState('all');
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
-
-  const languages = [
+  const languages: string[] = [
     'all',
     'TypeScript',
     'JavaScript',
@@ -55,7 +45,8 @@ export default function Explore() {
     'Angular',
     'Svelte'
   ];
-  const topics = [
+
+  const topics: string[] = [
     'all',
     'web-development',
     'mobile-development',
@@ -188,7 +179,7 @@ export default function Explore() {
                 placeholder="Search repositories..."
                 className="w-full pl-10 pr-4 py-3 bg-black/50 border border-[#2563eb]/40 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all duration-200"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
               />
             </div>
             
@@ -218,7 +209,7 @@ export default function Explore() {
                       <select
                         className="w-full bg-black/50 border border-[#2563eb]/40 rounded-lg text-white px-4 py-2 focus:outline-none focus:border-cyan-400 transition-colors"
                         value={selectedLanguage}
-                        onChange={(e) => setSelectedLanguage(e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSelectedLanguage(e.target.value)}
                       >
                         {languages.map((lang) => (
                           <option key={lang} value={lang} className="bg-black">
@@ -234,7 +225,7 @@ export default function Explore() {
                       <select
                         className="w-full bg-black/50 border border-[#2563eb]/40 rounded-lg text-white px-4 py-2 focus:outline-none focus:border-cyan-400 transition-colors"
                         value={selectedTopic}
-                        onChange={(e) => setSelectedTopic(e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSelectedTopic(e.target.value)}
                       >
                         {topics.map((topic) => (
                           <option key={topic} value={topic} className="bg-black">
