@@ -45,8 +45,8 @@ export default function Home() {
             Open Source Contribution is Easy and Lit.
           </p>
           <div className="home-buttons flex flex-col sm:flex-row gap-4 justify-center relative z-10" ref={buttonRef}>
-            <Button href="#" variant="primary">Get Started</Button>
-            <Button href="#" variant="secondary">Learn More</Button>
+            <Button href="/explore" variant="primary">Get Started</Button>
+            <Button href="/about" variant="secondary">Learn More</Button>
           </div>
         </div>
         {/* Neon Glow Effect */}
