@@ -548,7 +548,7 @@ export default function Explore(): React.ReactElement {
                 }
 
                 // Filter repositories to ensure they're from the correct organization
-                const validRepos = data.items.filter(repo => 
+                const validRepos = data.items.filter((repo: any) => 
                   repo.owner.login.toLowerCase() === org.toLowerCase()
                 );
 
